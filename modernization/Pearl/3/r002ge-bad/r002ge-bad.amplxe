@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+ <rdmgr>
+  <timestamp type="u64_t">1453829337</timestamp>
+  <hostname type="string">phi03.ncc.unesp.br</hostname>
+  <os type="string">linux</os>
+  <product type="string">Intel® VTune™ Amplifier XE 2016 Update 1</product>
+  <buildNumber type="s32_t">434111</buildNumber>
+  <logicalCPUCount type="s32_t">72</logicalCPUCount>
+  <CPUFrequency type="s64_t">2300000000</CPUFrequency>
+  <collectionTimeBegin type="u64_t">1453829337</collectionTimeBegin>
+  <collectionTimeEnd type="u64_t">1453829351</collectionTimeEnd>
+  <variables>
+   <at type="string">ge</at>
+  </variables>
+ </rdmgr>
+</root>
