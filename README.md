@@ -6,10 +6,13 @@ Hands-on source code: ~/handson/src/openMP4
 ## 1. Compiling running and environment variable  
 
 The file hello_omp.c implements an example of openMP4:  
-Compile hello_omp.c to Intel Xeon 
-Compile hello_omp.c to Intel Xeon Phi 
-Execute the code on Intel Xeon with 16 threads 
-Execute the code on Intel Xeon Phi with 100 threads  
+  Compile hello_omp.c to Intel Xeon 
+  
+  Compile hello_omp.c to Intel Xeon Phi 
+  
+  Execute the code on Intel Xeon with 16 threads 
+  
+  Execute the code on Intel Xeon Phi with 100 threads  
 
 ## 2. Thread affinity  
 
@@ -48,13 +51,26 @@ Include in the code below the following sequence of commands:
 
 ```
 #include <stdio.h> #include <unistd.h>  
-#pragma omp declare target   
-int sum,mult;  
-int sum2(int a, int b, int c) {      sum=a+b+c; }  
-int multiply2(int res) {      mult=sum*sum; }  
-#pragma omp end declare target  
-int main() {   int a,b,c;   a=rand();   b=rand();   c=rand();   sum=0;   mult=0;  
-  put your code here... }  
+  #pragma omp declare target   
+  int sum,mult;  
+  int sum2(int a, int b, int c) {      
+    sum=a+b+c; 
+  }  
+  int multiply2(int res) {      
+    mult=sum*sum; 
+  }  
+  
+  #pragma omp end declare target  
+  int main() {   
+    int a,b,c;   
+    a=rand();   
+    b=rand();   
+    c=rand();   
+    sum=0;   
+    mult=0;  
+    
+    put your code here... 
+  }  
 ```
 
 ## 5. `# pragma omp declare simd`
