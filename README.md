@@ -1,4 +1,3 @@
-# Courses-Source-Code
 # Hands-on “OpenMP with Intel Xeon and Intel Xeon Phi Architecture”  
 
 Hands-on source code: ~/handson/src/openMP4   
@@ -23,7 +22,9 @@ The file hello_omp.c implements an example of openMP4:
   Execute hello_omp with 10 threads and using affinity policy to spread threads among processors on Xeon Phi (scatter)  
 
   Execute hello_omp with 10 threads and using affinity policy to balance the thread allocation among processors on Xeon Phi (balanced) 
-## 3. Use pragma omp target to execute method SUM two times. First on device 3 using parameterx=3 and then on device 2 using parameter x=2. Using the code below:  
+## 3. pragma omp target
+
+Use pragma omp target to execute method SUM two times. First on device 3 using parameterx=3 and then on device 2 using parameter x=2. Using the code below:  
 
 ```
 #include <stdio.h> 
@@ -73,7 +74,7 @@ Include in the code below the following sequence of commands:
   }  
 ```
 
-## 5. `# pragma omp declare simd`
+## 5. pragma omp declare simd
 
 Compile the file OMP4-7.c with compilation report: 
 
