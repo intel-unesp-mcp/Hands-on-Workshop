@@ -3,22 +3,26 @@
 
 Hands-on source code: ~/handson/src/openMP4   
 
-## Compiling running and environment variable  
+## 1. Compiling running and environment variable  
 
 The file hello_omp.c implements an example of openMP4:  
-### Compile hello_omp.c to Intel Xeon 
-### Compile hello_omp.c to Intel Xeon Phi 
-### Execute the code on Intel Xeon with 16 threads 
-### Execute the code on Intel Xeon Phi with 100 threads  
+Compile hello_omp.c to Intel Xeon 
+Compile hello_omp.c to Intel Xeon Phi 
+Execute the code on Intel Xeon with 16 threads 
+Execute the code on Intel Xeon Phi with 100 threads  
 
-## Thread affinity  
-### Execute hello_omp with 10 threads and using affinity policy to allocate threads close to each other (compact)  
-### Execute hello_omp with 10 threads and using affinity policy to spread threads among processors (scatter)  
-### Execute hello_omp with 10 threads and using affinity policy to spread threads among processors on Xeon Phi (scatter)  
-### Execute hello_omp with 10 threads and using affinity policy to balance the thread allocation among processors on Xeon Phi (balanced)   
-  
-## Use pragma omp target to execute method SUM two times. First on device 3 using parameterx=3 and then on device 2 using parameter x=2. Using the code below:  
+## 2. Thread affinity  
 
+  Execute hello_omp with 10 threads and using affinity policy to allocate threads close to each other (compact)  
+
+  Execute hello_omp with 10 threads and using affinity policy to spread threads among processors (scatter)  
+
+  Execute hello_omp with 10 threads and using affinity policy to spread threads among processors on Xeon Phi (scatter)  
+
+  Execute hello_omp with 10 threads and using affinity policy to balance the thread allocation among processors on Xeon Phi (balanced) 
+## 3. Use pragma omp target to execute method SUM two times. First on device 3 using parameterx=3 and then on device 2 using parameter x=2. Using the code below:  
+
+```
 #include <stdio.h> 
 #include <unistd.h>  
 void sum(int x) { 
@@ -31,9 +35,18 @@ void sum(int x) {
 int main() {  
 //put your code here…  
 }   
-  
-Task 4 : pragma update  
-Include in the code below the following sequence of commands:  Copy variables A, B and C to CoProcessor using omp update  Execute sum2 with value A, B and C on device 3  Copy variable sum from CoProcessor using omp update  Execute multiply2 with value sum2 on device 2  Copy variable mult from CoProcessor using omp update   
+```
+
+## 4. pragma update  
+
+Include in the code below the following sequence of commands: 
+  Copy variables A, B and C to CoProcessor using omp update 
+  Execute sum2 with value A, B and C on device 3 
+  Copy variable sum from CoProcessor using omp update 
+  Execute multiply2 with value sum2 on device 2 
+  Copy variable mult from CoProcessor using omp update   
+
+```
 #include <stdio.h> #include <unistd.h>  
 #pragma omp declare target   
 int sum,mult;  
@@ -42,12 +55,25 @@ int multiply2(int res) {      mult=sum*sum; }
 #pragma omp end declare target  
 int main() {   int a,b,c;   a=rand();   b=rand();   c=rand();   sum=0;   mult=0;  
   put your code here... }  
-  
-Task 5 # pragma omp declare simd  
+```
+
+## 5. `# pragma omp declare simd`
+
 Compile the file OMP4-7.c with compilation report: 
+
+```
 icc OMP4-7.c -o OMP4-7 -fopenmp -vec-report6 
 cp OMP4-7.optrpt OMP4-7.optrpt2  
+```
+
 Include pragma omp declare simd in top of functions min and distsq and compile OMP4-7.c again. 
+
+```
 icc OMP4-7.c -o OMP4-7 -fopenmp -vec-report6  
-Compare the compilation report of both compilations, and verify weather the functions could be vectorized. 
+```
+
+Compare the compilation report of both compilations, and verify weather the functions could be vectorized or not.
+
+```
 diff OMP4-7.optrpt OMP4-7.optrpt2 
+```
