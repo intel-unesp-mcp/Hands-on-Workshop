@@ -1,19 +1,24 @@
 # Courses-Source-Code
-Hands-on “OpenMP with Intel Xeon and Intel Xeon Phi Architecture”  
- Hands-on source code: ~/handson/src/openMP4   
-1 Compiling running and environment variable  
+# Hands-on “OpenMP with Intel Xeon and Intel Xeon Phi Architecture”  
+
+Hands-on source code: ~/handson/src/openMP4   
+
+## Compiling running and environment variable  
+
 The file hello_omp.c implements an example of openMP4:  
-1.1 Compile hello_omp.c to Intel Xeon 
-1.2 Compile hello_omp.c to Intel Xeon Phi 
-1.3 Execute the code on Intel Xeon with 16 threads 
-1.4 Execute the code on Intel Xeon Phi with 100 threads  
-2 Thread affinity  
-2.1 Execute hello_omp with 10 threads and using affinity policy to allocate threads close to each other (compact)  
-2.2 Execute hello_omp with 10 threads and using affinity policy to spread threads among processors (scatter)  
-2.3 Execute hello_omp with 10 threads and using affinity policy to spread threads among processors on Xeon Phi (scatter)  
-2.4 Execute hello_omp with 10 threads and using affinity policy to balance the thread allocation among processors on Xeon Phi (balanced)   
+### Compile hello_omp.c to Intel Xeon 
+### Compile hello_omp.c to Intel Xeon Phi 
+### Execute the code on Intel Xeon with 16 threads 
+### Execute the code on Intel Xeon Phi with 100 threads  
+
+## Thread affinity  
+### Execute hello_omp with 10 threads and using affinity policy to allocate threads close to each other (compact)  
+### Execute hello_omp with 10 threads and using affinity policy to spread threads among processors (scatter)  
+### Execute hello_omp with 10 threads and using affinity policy to spread threads among processors on Xeon Phi (scatter)  
+### Execute hello_omp with 10 threads and using affinity policy to balance the thread allocation among processors on Xeon Phi (balanced)   
   
-3 Use pragma omp target to execute method SUM two times. First on device 3 using parameterx=3 and then on device 2 using parameter x=2. Using the code below:  
+## Use pragma omp target to execute method SUM two times. First on device 3 using parameterx=3 and then on device 2 using parameter x=2. Using the code below:  
+
 #include <stdio.h> 
 #include <unistd.h>  
 void sum(int x) { 
