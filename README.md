@@ -5,23 +5,18 @@ Hands-on source code: ~/handson/src/openMP4
 ## 1. Compiling running and environment variable  
 
 The file hello_omp.c implements an example of openMP4:  
-  Compile hello_omp.c to Intel Xeon 
-  
-  Compile hello_omp.c to Intel Xeon Phi 
-  
-  Execute the code on Intel Xeon with 16 threads 
-  
-  Execute the code on Intel Xeon Phi with 100 threads  
+  * Compile hello_omp.c to Intel Xeon 
+  * Compile hello_omp.c to Intel Xeon Phi 
+  * Execute the code on Intel Xeon with 16 threads 
+  * Execute the code on Intel Xeon Phi with 100 threads  
 
 ## 2. Thread affinity  
 
-  Execute hello_omp with 10 threads and using affinity policy to allocate threads close to each other (compact)  
-
-  Execute hello_omp with 10 threads and using affinity policy to spread threads among processors (scatter)  
-
-  Execute hello_omp with 10 threads and using affinity policy to spread threads among processors on Xeon Phi (scatter)  
-
-  Execute hello_omp with 10 threads and using affinity policy to balance the thread allocation among processors on Xeon Phi (balanced) 
+  * Execute hello_omp with 10 threads and using affinity policy to allocate threads close to each other (compact)  
+  * Execute hello_omp with 10 threads and using affinity policy to spread threads among processors (scatter)  
+  * Execute hello_omp with 10 threads and using affinity policy to spread threads among processors on Xeon Phi (scatter)  
+  * Execute hello_omp with 10 threads and using affinity policy to balance the thread allocation among processors on Xeon Phi (balanced) 
+  
 ## 3. pragma omp target
 
 Use pragma omp target to execute method SUM two times. First on device 3 using parameterx=3 and then on device 2 using parameter x=2. Using the code below:  
