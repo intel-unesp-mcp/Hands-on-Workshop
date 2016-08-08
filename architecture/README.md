@@ -1,8 +1,1 @@
-# Hands-on Activities
-
-## Architecture
-## Vectorization
-## OpenMP4
-## MPI/OpenMP
-## Daal
-
+Hands-on “Working with Intel Xeon and Intel Xeon Phi Architecture” 
