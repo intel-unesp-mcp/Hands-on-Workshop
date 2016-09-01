@@ -5,12 +5,10 @@
 
 int NNN = 900000000;
 
-#pragma omp declare simd
 double min (double a, double b) { 
   return a < b ? a : b; 
 }
 
-#pragma omp declare simd
 double distsq(double x, double y) {
   return((x-y)*(x-y));
 }
