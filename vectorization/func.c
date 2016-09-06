@@ -1,6 +1,5 @@
 #include "func.h"
 
-//void quad(int length, double * restrict a, double * restrict b, double * restrict c, double * restrict x1, double * restrict x2)
 void quad(int length, double * a, double * b, double * c, double * x1, double * x2)
 {
   int i,j;
