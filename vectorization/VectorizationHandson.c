@@ -9,7 +9,7 @@ int main(int argc, char * argv[])
   double randV;
 
   //n=20000;
-n=2000;
+n=20000;
 
   
   a = (double *) malloc(n*(sizeof (double)));
