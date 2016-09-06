@@ -8,7 +8,7 @@ int main(int argc, char * argv[])
   double *a, *b, *c, *d, *e, *x1,*x2;
   double randV;
 
-  //n=20000;
+  //n=2000;
 n=20000;
 
   
