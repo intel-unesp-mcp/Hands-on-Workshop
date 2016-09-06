@@ -1,5 +1,5 @@
 CXX = icpc
-CXXFLAGS = -g -O3 -fopenmp -DMETHOD=1
+CXXFLAGS = -g -O3 -fopenmp -DMETHOD=1 -I/opt/intel/advisor_xe/include/
 MICFLAGS  = 
 HOSTFLAGS = 
 
