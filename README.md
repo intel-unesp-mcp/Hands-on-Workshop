@@ -7,3 +7,7 @@ Hands-on Activities of Workshop on Parallel Programming and Optimization for Int
 3. OpenMP4
 4. MPI/OpenMP
 5. Daal
+
+After login on server execute the following command to configure environment:
+
+source /opt/intel/parallel_studio_xe_2016.1.056/psxevars.sh intel64
