@@ -39,12 +39,12 @@ void quad2()
 
   for(j=0; j<10000; j++) {
     for(i=0; i<40000; i++) {
-      /*obj[i].x=i + randV;    
+      obj[i].x=i + randV;    
       obj[i].y=i*i+ randV;  
-      obj[i].z=i+i+ randV;*/
-      obj.x[i]=i + randV;    
+      obj[i].z=i+i+ randV;
+      /*obj.x[i]=i + randV;    
       obj.y[i]=i*i+ randV;  
-      obj.z[i]=i+i+ randV;
+      obj.z[i]=i+i+ randV;*/
     }
     randV=rand();
     randV=randV*0.11;
