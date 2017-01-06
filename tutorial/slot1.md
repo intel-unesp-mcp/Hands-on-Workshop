@@ -15,7 +15,7 @@
  
  **1.3.** Execute the following commands in the main host and on one mic device. 
 
- * The following command returns the number of cores
+ * The following command returns the number of cores \n
  `cat /proc/cpuinfo | grep 'cpu cores' | uniq`
 
  * The following command returns the number of threads
@@ -23,7 +23,7 @@
 
  >How many cores and threads is available on main host and on mic Device?
 
-### Intel Xeon and Intel Xeon Phi Compiling and Running
+### 2. Intel Xeon and Intel Xeon Phi Compiling and Running
 
 The code hello_world.c shows the amount of logical threads available.
 
