@@ -1,8 +1,8 @@
-#Hands-on “Working with Intel Xeon and Intel Xeon Phi Architecture”
+# Hands-on “Working with Intel Xeon and Intel Xeon Phi Architecture”
 
-1. Intel Xeon Phi Management
+## 1. Intel Xeon Phi Management
 
- 1.1. Execute the following command to verify if the service that controls the devices is up and running:
+ *1.1.* Execute the following command to verify if the service that controls the devices is up and running:
 
  `service mpss status`
 
