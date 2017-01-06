@@ -18,7 +18,7 @@ Below you'll find a list of the training materials developed for this Hands-on.
 
 1. [Working with Intel Xeon and Intel Xeon Phi Archtecture](tutorial/slot1.md)
 1. [Vectorization](tutorial/slot2.md)
-1. OpenMP
+1. [OpenMP]
 ⋅⋅1. [Part 1: Modernization of an application using Intel Advisor](tutorial/slot3_1.md)
 ..1. [Part 2: OpenMP with Intel Xeon and Intel Xeon Phi Archtecture](tutorial/slot3_2.md)
 1. MPI
