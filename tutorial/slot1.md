@@ -124,5 +124,5 @@ Use the following snippet:
  
  ___
  
- [**Return to main page**](../README.md)
- [Next tutorial: **Vectorization**](slot2.md)
+ [### **Return to main page** ###](../README.md)
+ [### Next tutorial: **Vectorization** ###](slot2.md)
