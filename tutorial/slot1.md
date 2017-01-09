@@ -77,10 +77,10 @@ The code `hello_world_offload.c` performs the offload of a region of code to Int
 
  ```
  export OFFLOAD_REPORT=2
- ./helloWordOffload
+ ./hello_world_offload
  ```
  
- **3.3.** Change the code `helloWordOffload.c`. Add another region of code to be executed on Intel Xeon Phi, that performs the sum of two double elements and display the result.
+ **3.3.** Change the code `hello_world_offload.c`. Add another region of code to be executed on Intel Xeon Phi, that performs the sum of two double elements and display the result.
 
 Use the following snippet:
 
@@ -100,13 +100,13 @@ printf("Result : %f", sum);
 
 ## 4. Offload and Data Transfer ##
 
-The code `offloadFunction.c` shows a function that transfers function and data to be executed on Intel Xeon Phi:
+The code `offload_function.c` shows a function that transfers function and data to be executed on Intel Xeon Phi:
 
  **4.1.** Compile and run on Intel Xeon using the following commands:
  
  ```
- icc offloadFunction.c -o offloadFunction
- ./offloadFunction
+ icc offload_function.c -o offload_function
+ ./offload_function
  ```
  
  > How much data was transferred from CPU to MIC and from MIC to CPU?
