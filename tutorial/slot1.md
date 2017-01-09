@@ -124,5 +124,5 @@ Use the following snippet:
  
  ___
  
- <center>[**Return to main page**](../README.md)</center>
- <center>[Next tutorial: **Vectorization**](tutorial/slot2.md)</center>
+ [**Return to main page**](../README.md)
+ [Next tutorial: **Vectorization**](slot2.md)
