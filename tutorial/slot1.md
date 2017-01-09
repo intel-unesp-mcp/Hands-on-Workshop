@@ -121,3 +121,8 @@ Use the following snippet:
  for (cont=0; cont<n; cont++)
  sum += C[cont];
  ```
+ 
+ ___
+ 
+ <center>[**Return to main page**](../README.md)</center>
+ <center>[Next tutorial: **Vectorization**](tutorial/slot2.md)</center>
