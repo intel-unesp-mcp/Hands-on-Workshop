@@ -70,7 +70,7 @@ The code `hello_world_offload.c` performs the offload of a region of code to Int
 
  ```
  icc hello_world_offload.c -o hello_world_offload
- ./hello_word_offload
+ ./hello_world_offload
  ```
 
  **3.2.** Debug the offload using variable OFFLOAD_REPORT and run again:
@@ -110,6 +110,7 @@ The code `offload_function.c` shows a function that transfers function and data 
  ```
  
  > How much data was transferred from CPU to MIC and from MIC to CPU?
+
 
  **4.2.** Change the code offloadFunction.c Add a function called MyFunction2 to be executed on Intel Xeon Phi, that performs the sum of all elements of an array of double elements, and display the value of sum on the host. (transfer variable C[] from host to device and variable sum from device to host).
  
