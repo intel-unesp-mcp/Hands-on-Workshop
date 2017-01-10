@@ -31,7 +31,7 @@ icc vectorization_hands_on.c func.o -o vectorization_hands_on -vec-report6 -O3 -
 	* Name: vectest
 	* Application: `~/hands_on/vectorization/vectorization_hands_on`
 	* Source Folder: `~/hands_on/vectorization/`
-______
+
 
 ## Using Intel Advisor XE
 
@@ -55,4 +55,120 @@ ______
 **Figure 4.** Setup search directory.
 ______
 
+**5.** Start Survey Target Report (figure 5)
 
+![slot2_fig5](img/slot2_fig5.png)
+
+**Figure 5.** Survey target report.
+______
+
+**6.** Execute Trip Count Analysis (figure 6):
+
+> How many times the loop on function quad2 was executed?
+
+![slot2_fig6](img/slot2_fig6.png)
+
+**Figure 6.** Trip count results.
+______
+
+**7.** Check dependency of inner loop on function add_floats and on function quad (figure 7).
+
+* Mark Loop for deeper analysis;
+* Click on “check dependency”;
+
+![slot2_fig7](img/slot2_fig7.png)
+
+**Figure 7.** Check dependency.
+
+Note that no dependencies were found, so It is safe to vectorize the loop.
+
+**8.** Include `#pragma ivdep directive` in top of inner loop `for (i=0; i<n; i++)` on function `add_floats`:
+
+```c
+#pragma ivdep
+for (i=0; i<n; i++){
+```
+
+**9.** Include keyword `restrict` on all arguments that receives pointers on function `quad` (on `func.c` file):
+
+```c
+void quad(int length, double * restrict a, double * restrict b, double * restrict c, double * restrict x1, double * restrict x2)
+```
+
+**10.** Recompile the example and run survey target again:
+
+```
+icc func.c -g -c -vec-report6 -O3 -restrict
+icc VectorizationHandson.c -g func.o -o VectorizationHandson -vec-report6 -O3
+```
+
+Note that this loop was vectorized.
+
+**11.** Check Memory Access Pattern
+
+* Compile file `stride.c`:
+```
+icc stride.c -o stride -g
+```
+
+* Run the application and get the execution time:
+```
+time ./stride
+```
+
+* Mark inner Loop of function main of file `stride.c` for deeper analysis `for(i=0; i<40000; i++)` line 23 ;
+
+* Click on “check dependency”;
+
+* Open the refinement reports (figure 8)
+
+
+Note that the stride distribution is “constant stride”
+
+![slot2_fig8](img/slot2_fig8.png)
+
+**Figure 8.** Refinement report window.
+
+**12.** Redesign the structure to SOA (Structure of Arrays) format.
+
+* Change the structure on file stride.c from AOS to SOA using the following code:
+
+```c
+struct coordinate {
+float x[40000], y[40000], z[40000];
+} obj;
+```
+
+* Change the body of inner loop on main function:
+
+```c
+obj.x[i]=i + randV;
+obj.y[i]=i*i+ randV;
+obj.z[i]=i+i+ randV;
+Change the body of second inner loop on main function:
+for(i=0; i<40000; i++) {
+obj.x[i]= obj.y[i]+ obj.z[i] + randV;
+}
+```
+
+* Recompile the application and run the **Check Memory Access Pattern** again. Note that the stride distribution is unit stride now.
+
+* Run the application and get the execution time again:
+
+```
+time ./stride
+```
+
+Note that the performance may be improved.
+
+**13.** Recompile application using AVX.
+
+Using xhost:
+
+```
+icc stride.c -o stride -g -O3 -xhost
+```
+
+Collect Survey Data again. 
+
+Note that now the code was compiled using AVX.
