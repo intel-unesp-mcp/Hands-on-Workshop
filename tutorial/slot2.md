@@ -33,15 +33,23 @@ icc vectorization_hands_on.c func.o -o vectorization_hands_on -vec-report6 -O3 -
 	* Source Folder: `~/hands_on/vectorization/`
 
 ![slot2_fig1](img/slot2_fig1.png)
+
 **Figure 1.** Main Intel Advisor Window.
 ______
 
 ![slot2_fig2](img/slot2_fig2.png)
+
 **Figure 2.** Creating new project.
+______
 
 ![slot2_fig3](img/slot2_fig3.png)
+
 **Figure 3.** Configuring Project.
+______
 
 ![slot2_fig4](img/slot2_fig4.png)
+
 **Figure 4.** Setup search directory.
+______
+
 
