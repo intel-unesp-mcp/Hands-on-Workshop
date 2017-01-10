@@ -14,6 +14,7 @@
 	* Annotate sources: include annotations on source code to check scalability;
 	* Check suitability: evaluate the performance of annotated loops in different architectures and frameworks.
 
+
 ______
 
 **1.** Create Advisor Project
@@ -29,3 +30,31 @@ advixe-gui
 	* Application: ~/hands-on/Pearl/1/runme-CPU
 	* Application parameters: 3000 100
 	* Source Folder: ~/hands-on/Pearl/1/
+
+______
+
+**Step 1.**
+
+![slot3_1_fig1](img/slot3_1_fig1.png)
+
+______
+
+**Step 2.**
+
+![slot3_1_fig2](img/slot3_1_fig2.png)
+
+______
+
+**Step 3.**
+
+![slot3_1_fig3](img/slot3_1_fig3.png)
+
+______
+
+**Step 4.**
+
+![slot3_1_fig4](img/slot3_1_fig4.png)
+
+______
+
+
