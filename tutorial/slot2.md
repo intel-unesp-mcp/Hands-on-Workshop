@@ -32,4 +32,4 @@ icc vectorization_hands_on.c func.o -o vectorization_hands_on -vec-report6 -O3 -
 	* Application: `~/hands_on/vectorization/vectorization_hands_on`
 	* Source Folder: `~/hands_on/vectorization/`
 
-![slot2_fig1](tutorial/img/slot2_fig1.png)
+![slot2_fig1](img/slot2_fig1.png)
