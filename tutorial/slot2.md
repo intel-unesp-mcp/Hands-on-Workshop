@@ -158,8 +158,8 @@ obj.x[i]= obj.y[i]+ obj.z[i] + randV;
 ```
 time ./stride
 ```
-
 Note that the performance may be improved.
+______
 
 **13.** Recompile application using AVX.
 
