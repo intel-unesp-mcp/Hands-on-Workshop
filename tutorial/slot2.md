@@ -13,10 +13,10 @@
 
 ```
 icc func.c -c -vec-report6 -O3 -g
-icc VectorizationHandson.c func.o -o VectorizationHandson -vec-report6 -O3 -g
+icc vectorization_hands_on.c func.o -o vectorization_hands_on -vec-report6 -O3 -g
 ```
 
-**2.** Open the vectorization report `VectorizationHandson.optrpt`. Note that the loop on function main was automatically vectorized:
+**2.** Open the vectorization report `vectorization_hands_on.optrpt`. Note that the loop on function main was automatically vectorized:
 
 > remark #15300: LOOP WAS VECTORIZED
 
