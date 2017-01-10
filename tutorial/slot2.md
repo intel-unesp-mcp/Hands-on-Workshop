@@ -31,6 +31,9 @@ icc vectorization_hands_on.c func.o -o vectorization_hands_on -vec-report6 -O3 -
 	* Name: vectest
 	* Application: `~/hands_on/vectorization/vectorization_hands_on`
 	* Source Folder: `~/hands_on/vectorization/`
+______
+
+## Using Intel Advisor XE
 
 ![slot2_fig1](img/slot2_fig1.png)
 
