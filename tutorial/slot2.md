@@ -40,29 +40,29 @@ ______
 
 ## Using Intel Advisor XE
 
-![slot2_fig1](img/slot2_fig1.png)
+![slot2_fig1](img/slot2_fig01.png)
 
 **Figure 1.** Main Intel Advisor Window.
 ______
 
-![slot2_fig2](img/slot2_fig2.png)
+![slot2_fig2](img/slot2_fig02.png)
 
 **Figure 2.** Creating new project.
 ______
 
-![slot2_fig3](img/slot2_fig3.png)
+![slot2_fig3](img/slot2_fig03.png)
 
 **Figure 3.** Configuring Project.
 ______
 
-![slot2_fig4](img/slot2_fig4.png)
+![slot2_fig4](img/slot2_fig04.png)
 
 **Figure 4.** Setup search directory.
 ______
 
 **5.** Start Survey Target Report (figure 5)
 
-![slot2_fig5](img/slot2_fig5.png)
+![slot2_fig5](img/slot2_fig05.png)
 
 **Figure 5.** Survey target report.
 ______
@@ -71,7 +71,7 @@ ______
 
 > How many times the loop on function quad2 was executed?
 
-![slot2_fig6](img/slot2_fig6.png)
+![slot2_fig6](img/slot2_fig06.png)
 
 **Figure 6.** Trip count results.
 ______
@@ -81,7 +81,7 @@ ______
 * Mark Loop for deeper analysis;
 * Click on “check dependency”;
 
-![slot2_fig7](img/slot2_fig7.png)
+![slot2_fig7](img/slot2_fig07.png)
 
 **Figure 7.** Check dependency.
 
@@ -134,7 +134,7 @@ time ./stride
 
 Note that the stride distribution is “constant stride”
 
-![slot2_fig8](img/slot2_fig8.png)
+![slot2_fig8](img/slot2_fig08.png)
 
 **Figure 8.** Refinement report window.
 ______
