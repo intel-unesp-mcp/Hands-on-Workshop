@@ -20,11 +20,13 @@ ______
 **2.** Open the vectorization report `vectorization_hands_on.optrpt`. Note that the loop on function main was automatically vectorized:
 
 > remark #15300: LOOP WAS VECTORIZED
+
 ______
 
 **3.** Open the vectorization report of func `func.optrpt` and note that the loops on function `add_floats` and on function `quad` were not automatically vectorized:
 
 > remark #15344: loop was not vectorized: vector dependence prevents vectorization
+
 ______
 
 **4.** Create New Project on Intel Advisor to evaluate the application `vectorization_hands_on` (figures 1 to 4)
