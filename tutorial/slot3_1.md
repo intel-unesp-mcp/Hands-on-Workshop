@@ -4,8 +4,6 @@
 
 * This chapter exploits the use of Intel® VTune Amplifier XE reports to understand where to apply optimization on matrix transposition.
 
-______
-
 ## Speedup Estimation Analysis ##
 
 * Intel® Advisor XE is a shared memory threading designing and prototyping tool for C, C++, C# and Fortran;
@@ -15,6 +13,7 @@ ______
 	* Survey data: Discover opportunities for parallelization;
 	* Annotate sources: include annotations on source code to check scalability;
 	* Check suitability: evaluate the performance of annotated loops in different architectures and frameworks.
+______
 
 **1.** Create Advisor Project
 
