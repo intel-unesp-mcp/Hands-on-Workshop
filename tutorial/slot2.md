@@ -15,14 +15,17 @@
 icc func.c -c -vec-report6 -O3 -g
 icc vectorization_hands_on.c func.o -o vectorization_hands_on -vec-report6 -O3 -g
 ```
+______
 
 **2.** Open the vectorization report `vectorization_hands_on.optrpt`. Note that the loop on function main was automatically vectorized:
 
 > remark #15300: LOOP WAS VECTORIZED
+______
 
 **3.** Open the vectorization report of func `func.optrpt` and note that the loops on function `add_floats` and on function `quad` were not automatically vectorized:
 
 > remark #15344: loop was not vectorized: vector dependence prevents vectorization
+______
 
 **4.** Create New Project on Intel Advisor to evaluate the application `vectorization_hands_on` (figures 1 to 4)
 
@@ -81,6 +84,7 @@ ______
 **Figure 7.** Check dependency.
 
 Note that no dependencies were found, so It is safe to vectorize the loop.
+______
 
 **8.** Include `#pragma ivdep directive` in top of inner loop `for (i=0; i<n; i++)` on function `add_floats`:
 
@@ -88,12 +92,14 @@ Note that no dependencies were found, so It is safe to vectorize the loop.
 #pragma ivdep
 for (i=0; i<n; i++){
 ```
+______
 
 **9.** Include keyword `restrict` on all arguments that receives pointers on function `quad` (on `func.c` file):
 
 ```c
 void quad(int length, double * restrict a, double * restrict b, double * restrict c, double * restrict x1, double * restrict x2)
 ```
+______
 
 **10.** Recompile the example and run survey target again:
 
@@ -103,6 +109,7 @@ icc VectorizationHandson.c -g func.o -o VectorizationHandson -vec-report6 -O3
 ```
 
 Note that this loop was vectorized.
+______
 
 **11.** Check Memory Access Pattern
 
@@ -128,6 +135,7 @@ Note that the stride distribution is “constant stride”
 ![slot2_fig8](img/slot2_fig8.png)
 
 **Figure 8.** Refinement report window.
+______
 
 **12.** Redesign the structure to SOA (Structure of Arrays) format.
 
@@ -145,7 +153,11 @@ float x[40000], y[40000], z[40000];
 obj.x[i]=i + randV;
 obj.y[i]=i*i+ randV;
 obj.z[i]=i+i+ randV;
-Change the body of second inner loop on main function:
+```
+
+* Change the body of second inner loop on main function:
+
+```c
 for(i=0; i<40000; i++) {
 obj.x[i]= obj.y[i]+ obj.z[i] + randV;
 }
