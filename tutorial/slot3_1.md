@@ -13,6 +13,7 @@
 	* Survey data: Discover opportunities for parallelization;
 	* Annotate sources: include annotations on source code to check scalability;
 	* Check suitability: evaluate the performance of annotated loops in different architectures and frameworks.
+
 ______
 
 **1.** Create Advisor Project
