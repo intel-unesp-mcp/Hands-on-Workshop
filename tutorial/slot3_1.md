@@ -35,25 +35,25 @@ ______
 
 **Step 1.**
 
-![slot3_1_fig1](img/slot3_1_fig1.png)
+![slot3_1_fig1](img/slot3_1_fig01.png)
 
 ______
 
 **Step 2.**
 
-![slot3_1_fig2](img/slot3_1_fig2.png)
+![slot3_1_fig2](img/slot3_1_fig02.png)
 
 ______
 
 **Step 3.**
 
-![slot3_1_fig3](img/slot3_1_fig3.png)
+![slot3_1_fig3](img/slot3_1_fig03.png)
 
 ______
 
 **Step 4.**
 
-![slot3_1_fig4](img/slot3_1_fig4.png)
+![slot3_1_fig4](img/slot3_1_fig04.png)
 
 ______
 
