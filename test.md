@@ -142,13 +142,11 @@ coprocessor programming:
 
 **Useful References**
 
--   Intel Xeon Phi Coprocessor High-Performance Programming, by Jim
-    Jeffers and James Reinders (Elsevier, 2013)
+-  _Intel Xeon Phi Coprocessor High-Performance Programming, by Jim Jeffers and James Reinders (Elsevier, 2013)_
 
     <http://www.lotsofcores.com/>
 
--   Intel Xeon Phi Coprocessor Architecture and Tools, by Rezaur Rahman
-    (Apress, 2013)
+-   _Intel Xeon Phi Coprocessor Architecture and Tools, by Rezaur Rahman (Apress, 2013)_
 
     http://www.apress.com/9781430259268
 
