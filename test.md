@@ -1,10 +1,10 @@
-# Multi-/Many-Core Programming with Intel^®^ Xeon Phi^™^ Coprocessors #
+# Multi-/Many-Core Programming with Intel® Xeon Phi™ Coprocessors #
 
 ## Fundamentals of Parallel Programming using Intel´s Many Integrated Core (MIC) Architecture ##
 
-## 3rd International Summer School on INtelligent Signal Processing for FrontIEr Research and Industry ##
+## 4rd International Summer School on INtelligent Signal Processing for FrontIEr Research and Industry ##
 
-## Lab Workbook - Session 1 (CL6) ##
+Lab Workbook - Session 1 (CL6)
 
 ### January 2017 ###
 
