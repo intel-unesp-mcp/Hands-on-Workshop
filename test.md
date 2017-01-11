@@ -66,15 +66,13 @@ Please read through the following excerpt, extracted from the white
 paper referenced below, which will give you a short overview of the
 Intel Xeon Phi coprocessor.
 
-A. Vladimirov, V. Karpusenko, “*Test-driving Intel Xeon Phi coprocessors
-with a basic N-body simulation*”, Colfax International, January 2013,
-available at
+A. Vladimirov, V. Karpusenko, “*Test-driving Intel Xeon Phi coprocessors with a basic N-body simulation*”, Colfax International, January 2013, available at
 
 <http://research.colfaxinternational.com/post/2013/01/07/Nbody-Xeon-Phi.aspx>
 
 We will refer again to this white paper later on in this training.
 
-**What Intel Xeon Phi coprocessors bring to the table**
+## What Intel Xeon Phi coprocessors bring to the table ##
 
 Intel Xeon Phi coprocessor is a symmetric multiprocessor in the form
 factor of a PCI express device. Intel’s James Reinders has deﬁned the
