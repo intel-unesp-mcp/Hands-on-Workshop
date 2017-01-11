@@ -6,15 +6,14 @@
 
 Lab Workbook - Session 1 (CL6)
 
- January 2017
+January 2017
 
-## UNESP Center for Scientific Computing (an Intel Modern Code Partner) ##
+UNESP Center for Scientific Computing (an Intel Modern Code Partner)
+São Paulo State University (Universidade Estadual Paulista - UNESP)
 
-## São Paulo State University (Universidade Estadual Paulista - UNESP) ##
+São Paulo, Brazil 
 
-## São Paulo, Brazil ##
-
-** Organized by: Rogério Iope, Silvio Stanzani, Raphael Cóbe **
+**Organized by: Rogério Iope, Silvio Stanzani, Raphael Cóbe**
 
 ______
 
