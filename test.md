@@ -17,7 +17,7 @@ São Paulo, Brazil
 
 ______
 
-**Overview**
+## Overview ##
 
 The Intel Xeon Phi Coprocessor, the first product of Intel’s Many
 Integrated Core (MIC) Architecture, is a new accelerator technology
@@ -40,7 +40,7 @@ activities have been planned to provide easy to follow instructions in
 order to allow the participants to have a real - though very
 introductory - experience on using a powerful manycore system.
 
-**Learning Goals**
+## Learning Goals ##
 
 Attendants of these hands-on labs will start issuing simple command-line
 tools to get basic information about the Intel Xeon Phi coprocessors,
@@ -60,7 +60,7 @@ simultaneously on the Xeon processors and the Xeon Phi coprocessors,
 explore the use of Intel Math Kernel Library (MKL), and develop insights
 on tuning parallel applications.
 
-**Before you start**
+## Before you start ##
 
 Please read through the following excerpt, extracted from the white
 paper referenced below, which will give you a short overview of the
