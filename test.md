@@ -1,24 +1,22 @@
-**Multi-/Many-Core Programming with Intel^®^ Xeon Phi^™^ Coprocessors**
+# Multi-/Many-Core Programming with Intel^®^ Xeon Phi^™^ Coprocessors #
 
-**Fundamentals of Parallel Programming using Intel´s Many Integrated
-Core (MIC) Architecture**
+## Fundamentals of Parallel Programming using Intel´s Many Integrated Core (MIC) Architecture ##
 
-**3^rd^ International Summer School on**
+## 3rd International Summer School on INtelligent Signal Processing for FrontIEr Research and Industry ##
 
-**INtelligent Signal Processing for FrontIEr Research and Industry**
+## Lab Workbook - Session 1 (CL6) ##
 
-**Lab Workbook - Session 1 (CL6)**
+### January 2017 ###
 
-**September 2015**
+## UNESP Center for Scientific Computing (an Intel Modern Code Partner) ##
 
-**UNESP Center for Scientific Computing (an Intel Modern Code Partner)**
+## São Paulo State University (Universidade Estadual Paulista - UNESP) ##
 
-**São Paulo State University (*Universidade Estadual Paulista* -
-UNESP)**
+## São Paulo, Brazil ##
 
-**São Paulo, Brazil**
+** Organized by: Rogério Iope, Silvio Stanzani, Raphael Cóbe **
 
-**Organized by:** Rogério Iope, Silvio Stanzani, Raphael Cóbe
+______
 
 **Overview**
 
